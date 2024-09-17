@@ -18,7 +18,7 @@
         stateNode.state.gold == 0 && stateNode.setState({ gold: 100, gold2: 100 });
         stateNode._choosePrize ||= stateNode.choosePrize;
         stateNode.choosePrize = function (i) {
-            stateNode.state.choices[i] = { type: "multiply", val: 3, text: "Triple Gold!", blook: "Unicorn" };
+            stateNode.state.choices[i] = { type: "multiply", val: 100, text: "Triple Gold!", blook: "Unicorn" };
             stateNode._choosePrize(i);
         }
     });
